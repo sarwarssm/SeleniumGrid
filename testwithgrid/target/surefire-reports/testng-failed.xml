@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [TestSuite]">
+  <parameter name="browser" value="firefox"/>
+  <parameter name="version" value="ANY"/>
+  <parameter name="platform" value="WINDOWS"/>
+  <parameter name="url" value="http://www.gmail.com"/>
+  <test name="Firefox Test(failed)">
+    <parameter name="browser" value="firefox"/>
+    <parameter name="version" value="ANY"/>
+    <parameter name="platform" value="WINDOWS"/>
+    <parameter name="url" value="http://www.gmail.com"/>
+    <classes>
+      <class name="Tests.EmailTestwithgrid">
+        <methods>
+          <include name="TestLogin" invocation-numbers="0 1"/>
+          <include name="afterClass"/>
+          <include name="tearDown"/>
+          <include name="beforeClass"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Tests.EmailTestwithgrid -->
+    </classes>
+  </test> <!-- Firefox Test(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->
