@@ -29,5 +29,4 @@ public class EmailBody {
 		String actualbody = this.body.getText();
 		Assert.assertEquals(actualbody, expectedbody);
 	}
-
 }
