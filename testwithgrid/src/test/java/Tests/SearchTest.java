@@ -15,27 +15,25 @@ import Utilities.TestSuiteBase;
 
 public class SearchTest extends TestSuiteBase {
 
-	/*
-	 * Test Case: 1. Log into any email account and check if there is an email.
-	 * 2. Verify that subject and body of the e-mail contains a pre-defined
-	 * string. 3. Parameterize (data-drive) the script to handle multiple email
-	 * accounts.
-	 */
 	private String OsBrowser = "";
 
 	// @Test(priority=1,dataProviderClass=DataProviders.class,dataProvider="emailLogin")
 	@Test(priority = 1)
-	public void searchTest() throws InterruptedException {
-
+	public void firstSearchTest() throws InterruptedException {
 		OsBrowser = (String) ((JavascriptExecutor) driver).executeScript("return navigator.userAgent;");
-		homepage.fillUpSearchBox("milk");
+		homepage.fillUpSearchBox("Albor");
 		homepage.clickwikiSearchButton();
-		Assert.assertEquals("Milk - Wikipedia, the free encyclopedia", driver.getTitle());
-		Assert.assertEquals(searchresultpage.firstHeading(), "water");
-		searchresultpage.fillUpSearchBox("water");
-		searchresultpage.clickSearchButton();
-		Assert.assertEquals("Water - Wikipedia, the free encyclopedia", driver.getTitle());
+		Assert.assertEquals("Albor - Wikipedia, the free encyclopedia", driver.getTitle());
+		Assert.assertEquals(searchresultpage.firstHeading(), "Albor");
+	}
 
+	@Test(priority = 2)
+	public void secondSearchTest() throws InterruptedException {
+		OsBrowser = (String) ((JavascriptExecutor) driver).executeScript("return navigator.userAgent;");
+		searchresultpage.fillUpSearchBox("Sonie");
+		searchresultpage.clickSearchButton();
+		Assert.assertEquals("Sonie - Wikipedia, the free encyclopedia", driver.getTitle());
+		Assert.assertEquals(searchresultpage.firstHeading(), "Sonia");
 	}
 
 	@AfterMethod
@@ -43,17 +41,16 @@ public class SearchTest extends TestSuiteBase {
 		if (result.getStatus() == ITestResult.FAILURE) {
 
 			try {
-
-				String s = result.getName() + "method has failed";
+				String error = "Reason of Failure :\n" +result.getThrowable();
 				TakeScreenshot screenShot = new TakeScreenshot();
 				String attachment = screenShot.getScreenShot(this.driver, "emaillogin");
 				GmailManager email = new GmailManager();
-				email.sendEmailAtachment("SearchTest has failed :" + OsBrowser, s, attachment);
+				email.sendEmailAtachment("SearchTest has failed :" + OsBrowser, error, attachment);
 
 			} catch (Exception e) {
 				String exep = e.toString();
 				GmailManager email = new GmailManager();
-				email.sendEmail("emailLogin has falied", exep);
+				email.sendEmail("SearchTest has falied", exep);
 
 			}
 		}

@@ -10,7 +10,6 @@
 			<parameter name="url" value="http://www.wikipedia.org" />
 		</parameters>
 		<classes>
-<!-- 			<class name="Tests.EmailTestwithgrid" /> -->
 			<class name="Tests.SearchTest" />
 			
 		
