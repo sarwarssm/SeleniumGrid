@@ -1,120 +1,170 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="28.291" tests="2" errors="0" skipped="0" failures="2">
+<testsuite name="TestSuite" time="28.028" tests="2" errors="0" skipped="0" failures="1">
   <properties>
-    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_73\jre\bin"/>
-    <property name="java.vm.version" value="25.73-b02"/>
-    <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Users\shabib\Documents\workspace-sts-3.7.2.RELEASE\testwithgrid"/>
-    <property name="java.vendor.url" value="http://java.oracle.com/"/>
-    <property name="path.separator" value=";"/>
-    <property name="guice.disable.misplaced.annotation.check" value="true"/>
-    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
-    <property name="file.encoding.pkg" value="sun.io"/>
-    <property name="user.script" value=""/>
-    <property name="user.country" value="US"/>
-    <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="sun.os.patch.level" value=""/>
-    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Users\shabib\Documents\workspace-sts-3.7.2.RELEASE\testwithgrid"/>
-    <property name="java.runtime.version" value="1.8.0_73-b02"/>
-    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_73\jre\lib\endorsed"/>
-    <property name="os.arch" value="amd64"/>
-    <property name="java.io.tmpdir" value="C:\Users\shabib\AppData\Local\Temp\"/>
-    <property name="line.separator" value="&#10;"/>
-    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="user.variant" value=""/>
-    <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Users\shabib\Documents\workspace-sts-3.7.2.RELEASE\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf1054039554303739848.tmp"/>
-    <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_73\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_73/bin/server;C:/Program Files/Java/jre1.8.0_73/bin;C:/Program Files/Java/jre1.8.0_73/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\nodejs\;C:\Users\shabib\AppData\Roaming\npm;C:\spring-tool-suite-3.7.2\sts-bundle\sts-3.7.2.RELEASE;;."/>
-    <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="java.class.version" value="52.0"/>
-    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="10.0"/>
-    <property name="user.home" value="C:\Users\shabib"/>
-    <property name="user.timezone" value="America/New_York"/>
-    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
-    <property name="java.specification.version" value="1.8"/>
-    <property name="file.encoding" value="Cp1252"/>
-    <property name="user.name" value="shabib"/>
-    <property name="java.class.path" value="/C:/spring-tool-suite-3.7.2/sts-bundle/sts-3.7.2.RELEASE/plugins/org.eclipse.m2e.maven.runtime_1.6.2.20150902-0001/jars/plexus-classworlds-2.5.2.jar"/>
-    <property name="java.vm.specification.version" value="1.8"/>
-    <property name="sun.arch.data.model" value="64"/>
-    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_73\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B install"/>
-    <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="user.language" value="en"/>
-    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
-    <property name="java.vm.info" value="mixed mode"/>
-    <property name="java.version" value="1.8.0_73"/>
-    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_73\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
-    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_73\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_73\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_73\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_73\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_73\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_73\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_73\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_73\jre\classes"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="C:\Users\shabib\Documents\workspace-sts-3.7.2.RELEASE\testwithgrid\EMBEDDED"/>
-    <property name="file.separator" value="\"/>
-    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
-    <property name="sun.cpu.endian" value="little"/>
-    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="JOB_NAME" value="jenkin test"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="windows_tracing_logfile" value="C:\BVTBin\Tests\installpackage\csilogfile.log"/>
+    <property name="NUMBER_OF_PROCESSORS" value="4"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="JENKINS_HOME" value="C:\Users\shabib\.jenkins"/>
+    <property name="HUDSON_SERVER_COOKIE" value="73b9a323f78d5311"/>
+    <property name="POM_ARTIFACTID" value="testwithgrid"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_73\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_73\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_73\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_73\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_73\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_73\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_73\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_73\jre\classes"/>
+    <property name="EXECUTOR_NUMBER" value="0"/>
     <property name="sun.desktop" value="windows"/>
+    <property name="PATHEXT" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="POM_DISPLAYNAME" value="testwithgrid"/>
+    <property name="NODE_LABELS" value="master"/>
+    <property name="TEMP" value="C:\Users\shabib\AppData\Local\Temp"/>
+    <property name="java.runtime.version" value="1.8.0_73-b02"/>
+    <property name="user.name" value="shabib"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="CommonProgramW6432" value="C:\Program Files\Common Files"/>
+    <property name="ProgramFiles" value="C:\Program Files"/>
+    <property name="PROMPT" value="$P$G"/>
+    <property name="user.language" value="en"/>
+    <property name="BUILD_DISPLAY_NAME" value="#4"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_73\jre\bin"/>
+    <property name="LOCALAPPDATA" value="C:\Users\shabib\AppData\Local"/>
+    <property name="java.version" value="1.8.0_73"/>
+    <property name="PROCESSOR_LEVEL" value="6"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="USERNAME" value="shabib"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="NODE_NAME" value="master"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_73\jre\lib\endorsed"/>
+    <property name="BUILD_ID" value="4"/>
     <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="HOMEDRIVE" value="C:"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="org.slf4j.simpleLogger.defaultLogLevel" value="info"/>
+    <property name="user.country" value="US"/>
+    <property name="ALLUSERSPROFILE" value="C:\ProgramData"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_73\jre"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="os.version" value="10.0"/>
+    <property name="POM_VERSION" value="0.0.1-SNAPSHOT"/>
+    <property name="TMP" value="C:\Users\shabib\AppData\Local\Temp"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.version" value="25.73-b02"/>
+    <property name="user.variant" value=""/>
+    <property name="CommonProgramFiles(x86)" value="C:\Program Files (x86)\Common Files"/>
+    <property name="USERDOMAIN_ROAMINGPROFILE" value="shabib-PC"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="FP_NO_HOST_CHECK" value="NO"/>
+    <property name="JAVA_HOME" value="C:\Program Files\Java\jdk1.8.0_73"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="CommonProgramFiles" value="C:\Program Files\Common Files"/>
+    <property name="ComSpec" value="C:\WINDOWS\system32\cmd.exe"/>
+    <property name="HOMEPATH" value="\Users\shabib"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="POM_PACKAGING" value="jar"/>
+    <property name="HOME" value="C:\Users\shabib"/>
+    <property name="COMPUTERNAME" value="SHABIB-PC"/>
+    <property name="user.script" value=""/>
+    <property name="POM_GROUPID" value="test"/>
+    <property name="PUBLIC" value="C:\Users\Public"/>
+    <property name="user.home" value="C:\Users\shabib"/>
+    <property name="BUILD_TAG" value="jenkins-jenkin test-4"/>
+    <property name="JENKINS_SERVER_COOKIE" value="73b9a323f78d5311"/>
+    <property name="HUDSON_URL" value="http://localhost:8080/"/>
+    <property name="ProgramData" value="C:\ProgramData"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="USERPROFILE" value="C:\Users\shabib"/>
+    <property name="CLASSPATH" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_73\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\apache-maven-3.3.9/bin;C:\Program Files\Java\jdk1.8.0_73/bin;C:\Program Files\Java\jdk1.8.0_73/bin;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\nodejs\;C:\apache-maven-3.3.9\bin;C:\Users\shabib\AppData\Roaming\npm;."/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="APPDATA" value="C:\Users\shabib\AppData\Roaming"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="maven.home" value="C:\apache-maven-3.3.9"/>
+    <property name="java.class.path" value="C:\Users\shabib\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven31-agent-1.5.jar;C:\apache-maven-3.3.9\boot\plexus-classworlds-2.5.2.jar;C:\apache-maven-3.3.9/conf/logging"/>
+    <property name="sun.java.command" value="jenkins.maven3.agent.Maven31Main C:\apache-maven-3.3.9 C:\Users\shabib\.jenkins\war\WEB-INF\lib\remoting-2.53.3.jar C:\Users\shabib\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven31-interceptor-1.5.jar C:\Users\shabib\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.5.jar 55838"/>
+    <property name="Path" value="C:\Program Files\Java\jdk1.8.0_73/bin;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\nodejs\;C:\apache-maven-3.3.9\bin;C:\Users\shabib\AppData\Roaming\npm"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PROCESSOR_ARCHITECTURE" value="AMD64"/>
+    <property name="PATH+JDK" value="C:\Program Files\Java\jdk1.8.0_73/bin"/>
+    <property name="PROCESSOR_IDENTIFIER" value="Intel64 Family 6 Model 26 Stepping 5, GenuineIntel"/>
+    <property name="SESSIONNAME" value="Console"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="M2_HOME" value="C:\apache-maven-3.3.9"/>
+    <property name="java.io.tmpdir" value="C:\Users\shabib\AppData\Local\Temp\"/>
+    <property name="OS" value="Windows_NT"/>
+    <property name="HUDSON_HOME" value="C:\Users\shabib\.jenkins"/>
+    <property name="PATH+MAVEN" value="C:\apache-maven-3.3.9/bin"/>
+    <property name="ProgramFiles(x86)" value="C:\Program Files (x86)"/>
+    <property name="BUILD_URL" value="http://localhost:8080/job/jenkin%20test/4/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="SystemRoot" value="C:\WINDOWS"/>
+    <property name="windows_tracing_flags" value="3"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_73\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="user.dir" value="F:\git\testwithgrid"/>
+    <property name="JOB_URL" value="http://localhost:8080/job/jenkin%20test/"/>
+    <property name="LOGONSERVER" value="\\SHABIB-PC"/>
+    <property name="USERDOMAIN" value="shabib-PC"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="MAVEN_HOME" value="C:\apache-maven-3.3.9"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="BUILD_NUMBER" value="4"/>
+    <property name="JENKINS_URL" value="http://localhost:8080/"/>
+    <property name="PROCESSOR_REVISION" value="1a05"/>
+    <property name="ProgramW6432" value="C:\Program Files"/>
+    <property name="windir" value="C:\WINDOWS"/>
+    <property name="=C:" value="C:\"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="SystemDrive" value="C:"/>
+    <property name="maven3.interceptor" value="C:\Users\shabib\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven31-interceptor-1.5.jar"/>
+    <property name="WORKSPACE" value="C:\Users\shabib\.jenkins\jobs\jenkin test\workspace"/>
+    <property name="maven3.interceptor.common" value="C:\Users\shabib\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.5.jar"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="PSModulePath" value="C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules\"/>
   </properties>
-  <testcase name="TestLogin" classname="Tests.EmailTestwithgrid" time="17.665">
-    <failure message="Index: 0, Size: 0" type="java.lang.IndexOutOfBoundsException">java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
-	at java.util.ArrayList.rangeCheck(ArrayList.java:653)
-	at java.util.ArrayList.get(ArrayList.java:429)
+  <testcase name="TestLogin" classname="Tests.EmailTestwithgrid" time="16.226"/>
+  <testcase name="TestLogin" classname="Tests.EmailTestwithgrid" time="11.802">
+    <failure message="Element is not currently visible and so may not be interacted with&#10;Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;&#10;System info: host: &apos;shabib-PC&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_73&apos;&#10;Driver info: driver.version: unknown&#10;Command duration or timeout: 10.62 seconds&#10;Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;&#10;System info: host: &apos;shabib-PC&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_73&apos;&#10;Driver info: Utilities.ScreenShotRemoteWebDriver&#10;Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webdriver.remote.sessionid=9557f45c-c295-49b1-a962-f0599cb2db1f, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]&#10;Session ID: 9557f45c-c295-49b1-a962-f0599cb2db1f" type="org.openqa.selenium.ElementNotVisibleException"><![CDATA[org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
+System info: host: 'shabib-PC', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_73'
+Driver info: driver.version: unknown
+Command duration or timeout: 10.62 seconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'shabib-PC', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_73'
+Driver info: Utilities.ScreenShotRemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webdriver.remote.sessionid=9557f45c-c295-49b1-a962-f0599cb2db1f, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 9557f45c-c295-49b1-a962-f0599cb2db1f
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:138)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:140)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)
-	at com.sun.proxy.$Proxy8.get(Unknown Source)
-	at PageObjects.Inbox.clickEmail(Inbox.java:28)
-	at Tests.EmailTestwithgrid.TestLogin(EmailTestwithgrid.java:37)
-</failure>
-    <system-out><![CDATA[ugoodsdev3@gmail.com
-ug0000dz
-]]></system-out>
-  </testcase>
-  <testcase name="TestLogin" classname="Tests.EmailTestwithgrid" time="10.626">
-    <failure message="Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;Email&quot;}&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;&#10;System info: host: &apos;shabib-PC&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_73&apos;&#10;Driver info: driver.version: unknown&#10;Command duration or timeout: 10.58 seconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;&#10;System info: host: &apos;shabib-PC&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_73&apos;&#10;Driver info: Utilities.ScreenShotRemoteWebDriver&#10;Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webdriver.remote.sessionid=fc4c25c4-84b8-403b-b23e-868caeaaf67b, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]&#10;Session ID: fc4c25c4-84b8-403b-b23e-868caeaaf67b&#10;*** Element info: {Using=id, value=Email}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"Email"}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
-System info: host: 'shabib-PC', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_73'
-Driver info: driver.version: unknown
-Command duration or timeout: 10.58 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'shabib-PC', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_73'
-Driver info: Utilities.ScreenShotRemoteWebDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webdriver.remote.sessionid=fc4c25c4-84b8-403b-b23e-868caeaaf67b, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: fc4c25c4-84b8-403b-b23e-868caeaaf67b
-*** Element info: {Using=id, value=Email}
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:138)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
-	at org.openqa.selenium.By$ById.findElement(By.java:218)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 	at com.sun.proxy.$Proxy7.clear(Unknown Source)
 	at PageObjects.HomePage.fillUpEmail(HomePage.java:28)
 	at Tests.EmailTestwithgrid.TestLogin(EmailTestwithgrid.java:33)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"Email"}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Caused by: org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
 Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
 System info: host: 'shabib-PC', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_73'
 Driver info: driver.version: unknown
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
 System info: host: 'shabib-PC', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_73'
 Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/shabib/AppData/Local/Temp/anonymous8196486251105204857webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
-	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/shabib/AppData/Local/Temp/anonymous8196486251105204857webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+	at <anonymous class>.fxdriver.preconditions.visible(file:///C:/Users/shabib/AppData/Local/Temp/anonymous1259669139866717694webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+	at <anonymous class>.DelayedCommand.prototype.checkPreconditions_(file:///C:/Users/shabib/AppData/Local/Temp/anonymous1259669139866717694webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/shabib/AppData/Local/Temp/anonymous1259669139866717694webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/shabib/AppData/Local/Temp/anonymous1259669139866717694webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:625)
 ]]></failure>
-    <system-out><![CDATA[Sent message successfully....
-]]></system-out>
   </testcase>
 </testsuite>

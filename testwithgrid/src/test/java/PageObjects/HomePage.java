@@ -12,34 +12,19 @@ public class HomePage {
 		// PageFactory.initElements(driver, this);
 	}
 
-	@FindBy(id = "Email")
-	private WebElement email;
+	@FindBy(name = "search")
+	private WebElement searchBox;
 
-	@FindBy(id = "next")
-	private WebElement next;
+	@FindBy(css = "#search-form > fieldset > button > i")
+	private WebElement wikiSearchButton;
 
-	@FindBy(id = "Passwd")
-	private WebElement password;
-
-	@FindBy(id = "signIn")
-	private WebElement signIn;
-
-	public void fillUpEmail(String emailAddress) {
-		this.email.clear();
-		this.email.sendKeys(emailAddress);
+	public void clickwikiSearchButton() {
+		this.wikiSearchButton.click();
 	}
 
-	public void clickNext() {
-		this.next.click();
+	public void fillUpSearchBox(String searchString) {
+		this.searchBox.clear();
+		this.searchBox.sendKeys(searchString);
 	}
 
-	public void fillUpPassword(String password) {
-		this.password.clear();
-		this.password.sendKeys(password);
-	}
-
-	public void clickSignIn() {
-		this.signIn.click();
-
-	}
 }

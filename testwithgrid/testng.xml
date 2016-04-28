@@ -7,10 +7,12 @@
 			<parameter name="browser" value="firefox" />
 			<parameter name="version" value="ANY" />
 			<parameter name="platform" value="WINDOWS" />
-			<parameter name="url" value="http://www.gmail.com" />
+			<parameter name="url" value="http://www.wikipedia.org" />
 		</parameters>
 		<classes>
-			<class name="Tests.EmailTestwithgrid" />
+<!-- 			<class name="Tests.EmailTestwithgrid" /> -->
+			<class name="Tests.SearchTest" />
+			
 		
 		</classes>
 	</test>

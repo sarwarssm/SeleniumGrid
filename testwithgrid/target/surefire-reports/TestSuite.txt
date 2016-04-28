@@ -1,54 +1,39 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 37.108 sec <<< FAILURE! - in TestSuite
-TestLogin(Tests.EmailTestwithgrid)  Time elapsed: 17.665 sec  <<< FAILURE!
-java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
-	at java.util.ArrayList.rangeCheck(ArrayList.java:653)
-	at java.util.ArrayList.get(ArrayList.java:429)
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 36.638 sec <<< FAILURE! - in TestSuite
+TestLogin(Tests.EmailTestwithgrid)  Time elapsed: 11.802 sec  <<< FAILURE!
+org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
+System info: host: 'shabib-PC', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_73'
+Driver info: driver.version: unknown
+Command duration or timeout: 10.62 seconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'shabib-PC', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_73'
+Driver info: Utilities.ScreenShotRemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webdriver.remote.sessionid=9557f45c-c295-49b1-a962-f0599cb2db1f, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 9557f45c-c295-49b1-a962-f0599cb2db1f
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:138)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:140)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)
-	at com.sun.proxy.$Proxy8.get(Unknown Source)
-	at PageObjects.Inbox.clickEmail(Inbox.java:28)
-	at Tests.EmailTestwithgrid.TestLogin(EmailTestwithgrid.java:37)
-
-TestLogin(Tests.EmailTestwithgrid)  Time elapsed: 10.626 sec  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"Email"}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
-System info: host: 'shabib-PC', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_73'
-Driver info: driver.version: unknown
-Command duration or timeout: 10.58 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'shabib-PC', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_73'
-Driver info: Utilities.ScreenShotRemoteWebDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webdriver.remote.sessionid=fc4c25c4-84b8-403b-b23e-868caeaaf67b, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: fc4c25c4-84b8-403b-b23e-868caeaaf67b
-*** Element info: {Using=id, value=Email}
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:138)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
-	at org.openqa.selenium.By$ById.findElement(By.java:218)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 	at com.sun.proxy.$Proxy7.clear(Unknown Source)
 	at PageObjects.HomePage.fillUpEmail(HomePage.java:28)
 	at Tests.EmailTestwithgrid.TestLogin(EmailTestwithgrid.java:33)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"Email"}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Caused by: org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
 Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
 System info: host: 'shabib-PC', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_73'
 Driver info: driver.version: unknown
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
 System info: host: 'shabib-PC', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_73'
 Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/shabib/AppData/Local/Temp/anonymous8196486251105204857webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
-	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/shabib/AppData/Local/Temp/anonymous8196486251105204857webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+	at <anonymous class>.fxdriver.preconditions.visible(file:///C:/Users/shabib/AppData/Local/Temp/anonymous1259669139866717694webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+	at <anonymous class>.DelayedCommand.prototype.checkPreconditions_(file:///C:/Users/shabib/AppData/Local/Temp/anonymous1259669139866717694webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/shabib/AppData/Local/Temp/anonymous1259669139866717694webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/shabib/AppData/Local/Temp/anonymous1259669139866717694webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:625)
 

@@ -13,7 +13,7 @@
     <classes>
       <class name="Tests.EmailTestwithgrid">
         <methods>
-          <include name="TestLogin" invocation-numbers="0 1"/>
+          <include name="TestLogin" invocation-numbers="1"/>
           <include name="afterClass"/>
           <include name="tearDown"/>
           <include name="beforeClass"/>

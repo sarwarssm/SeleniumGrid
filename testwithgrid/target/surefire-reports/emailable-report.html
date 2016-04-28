@@ -31,12 +31,14 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Firefox Test</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">2</td><td class="numi">36.6 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Firefox Test</td><td class="numi">2</td><td class="numi">1</td><td class="numi">0</td><td class="numi_attn">2</td><td class="numi">36.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
 <tr><th colspan="4">Firefox Test &#8212; failed</th></tr>
-<tr class="failedodd"><td rowspan="2">Tests.EmailTestwithgrid</td><td><a href="#m1"><b>TestLogin</b>  </a></td><td class="numi">2</td><td>1461636221040</td><td class="numi">29606</td></tr><tr class="failedodd"><td><a href="#m2"><b>TestLogin</b>  </a></td><td class="numi">2</td><td>1461636221040</td><td class="numi">29606</td></tr>
+<tr class="failedodd"><td rowspan="2">Tests.EmailTestwithgrid</td><td><a href="#m1"><b>TestLogin</b>  </a></td><td class="numi">1</td><td>1461644612362</td><td class="numi">11788</td></tr><tr class="failedodd"><td><a href="#m2"><b>TestLogin</b>  </a></td><td class="numi">1</td><td>1461644612362</td><td class="numi">11788</td></tr>
+<tr><th colspan="4">Firefox Test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="2">Tests.EmailTestwithgrid</td><td><a href="#m3"><b>TestLogin</b>  </a></td><td class="numi">1</td><td>1461644596136</td><td class="numi">16225</td></tr><tr class="passedodd"><td><a href="#m4"><b>TestLogin</b>  </a></td><td class="numi">1</td><td>1461644596136</td><td class="numi">16225</td></tr>
 </table>
 <h1>Firefox Test</h1>
 <h2 id="m1">Tests.EmailTestwithgrid:TestLogin</h2>
@@ -48,19 +50,16 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <td>new test message</td>
 </tr>
 <tr><td style="padding-left:3em" colspan="4">
-<p>Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;Email&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+<p>Element is not currently visible and so may not be interacted with
 Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
 System info: host: &apos;shabib-PC&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_73&apos;
 Driver info: driver.version: unknown
-Command duration or timeout: 10.58 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Command duration or timeout: 10.62 seconds
 Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
 System info: host: &apos;shabib-PC&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_73&apos;
 Driver info: Utilities.ScreenShotRemoteWebDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webdriver.remote.sessionid=fc4c25c4-84b8-403b-b23e-868caeaaf67b, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: fc4c25c4-84b8-403b-b23e-868caeaaf67b
-*** Element info: {Using=id, value=Email}</p>
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webdriver.remote.sessionid=9557f45c-c295-49b1-a962-f0599cb2db1f, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 9557f45c-c295-49b1-a962-f0599cb2db1f</p>
 sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 <br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 <br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -68,12 +67,13 @@ sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 <br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
 <br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
 <br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
-<br/>at org.openqa.selenium.By$ById.findElement(By.java:218)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:140)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br/>at java.lang.reflect.Method.invoke(Method.java:497)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 <br/>at com.sun.proxy.$Proxy7.clear(Unknown Source)
 <br/>at PageObjects.HomePage.fillUpEmail(HomePage.java:28)
 <br/>at Tests.EmailTestwithgrid.TestLogin(EmailTestwithgrid.java:33)
@@ -84,27 +84,28 @@ System info: host: &apos;shabib-PC&apos;, ip: &apos;192.168.1.2&apos;, os.name: 
 Driver info: driver.version: RemoteWebDriver</p>
 org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:138)
 <br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
-<br/>at org.openqa.selenium.By$ById.findElement(By.java:218)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:140)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br/>at java.lang.reflect.Method.invoke(Method.java:497)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 <br/>at com.sun.proxy.$Proxy7.clear(Unknown Source)
 <br/>at PageObjects.HomePage.fillUpEmail(HomePage.java:28)
 <br/>at Tests.EmailTestwithgrid.TestLogin(EmailTestwithgrid.java:33)
 <br/>28 lines not shown
-<p>Caused by Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;Email&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+<p>Caused by Element is not currently visible and so may not be interacted with
 Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
 System info: host: &apos;shabib-PC&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_73&apos;
 Driver info: driver.version: unknown
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
 System info: host: &apos;shabib-PC&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_73&apos;
 Driver info: driver.version: unknown</p>
-&lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/shabib/AppData/Local/Temp/anonymous8196486251105204857webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
-<br/>at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/shabib/AppData/Local/Temp/anonymous8196486251105204857webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+&lt;anonymous class&gt;.fxdriver.preconditions.visible(file:///C:/Users/shabib/AppData/Local/Temp/anonymous1259669139866717694webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.checkPreconditions_(file:///C:/Users/shabib/AppData/Local/Temp/anonymous1259669139866717694webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/shabib/AppData/Local/Temp/anonymous1259669139866717694webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+<br/>at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/shabib/AppData/Local/Temp/anonymous1259669139866717694webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:625)
 <br/>1 lines not shown
 </td></tr>
 </table>
@@ -117,20 +118,6 @@ Driver info: driver.version: unknown</p>
 <td>test1</td>
 <td>test message</td>
 </tr>
-<tr><td style="padding-left:3em" colspan="4">
-<p>Index: 0, Size: 0</p>
-java.util.ArrayList.rangeCheck(ArrayList.java:653)
-<br/>at java.util.ArrayList.get(ArrayList.java:429)
-<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-<br/>at java.lang.reflect.Method.invoke(Method.java:497)
-<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)
-<br/>at com.sun.proxy.$Proxy8.get(Unknown Source)
-<br/>at PageObjects.Inbox.clickEmail(Inbox.java:28)
-<br/>at Tests.EmailTestwithgrid.TestLogin(EmailTestwithgrid.java:37)
-<br/>28 lines not shown
-</td></tr>
 </table>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

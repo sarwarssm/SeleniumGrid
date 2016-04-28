@@ -9,26 +9,25 @@ import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import PageObjects.HomePage;
-import PageObjects.Inbox;
-import PageObjects.EmailBody;
+import PageObjects.SearchResultPage;
 import Utilities.ScreenShotRemoteWebDriver;
 
 public class TestSuiteBase {
 
 	public WebDriver driver;
 	protected PageObjects.HomePage homepage;
-	protected PageObjects.Inbox inbox;
-	protected PageObjects.EmailBody emailbody;
+
+	protected PageObjects.SearchResultPage searchresultpage;
 
 	@Parameters({ "platform", "browser", "version", "url" })
 	@BeforeClass(alwaysRun = true)
 	public void setup(String platform, String browser, String version, String url) throws MalformedURLException {
 		driver = getDriverInstance(platform, browser, version, url);
 		homepage = PageFactory.initElements(driver, HomePage.class);
-		inbox = PageFactory.initElements(driver, Inbox.class);
-		emailbody = PageFactory.initElements(driver, EmailBody.class);
+		searchresultpage = PageFactory.initElements(driver, SearchResultPage.class);
 	}
 
 	public static WebDriver getDriverInstance(String platform, String browser, String version, String url)
@@ -61,7 +60,9 @@ public class TestSuiteBase {
 		driver = new ScreenShotRemoteWebDriver(new URL(hubURL), caps);
 		// Maximize the browser's window
 		driver.manage().window().maximize();
+		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		
 		// Open the Application
 		driver.get(url);
 		return driver;
