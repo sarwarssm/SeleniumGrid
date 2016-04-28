@@ -12,7 +12,7 @@ public class HomePage {
 		// PageFactory.initElements(driver, this);
 	}
 
-	@FindBy(name = "search")
+	@FindBy(id="searchInput")
 	private WebElement searchBox;
 
 	@FindBy(css = "#search-form > fieldset > button > i")

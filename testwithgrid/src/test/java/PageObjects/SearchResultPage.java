@@ -12,7 +12,7 @@ public class SearchResultPage {
 		// PageFactory.initElements(driver, this);
 	}
 
-	@FindBy(name = "search")
+	@FindBy(css = "#searchInput")
 	private WebElement searchBox;
 
 	@FindBy(name = "go")
@@ -32,8 +32,7 @@ public class SearchResultPage {
 
 	public String firstHeading() {
 		String heading = firstHead.getText().toString();
-		System.out.println(heading);
 		return heading;
 	}
-
+	
 }

@@ -13,8 +13,9 @@
     <classes>
       <class name="Tests.SearchTest">
         <methods>
+          <include name="tearDown"/>
           <include name="afterClass"/>
-          <include name="searchTest"/>
+          <include name="blankresultPage"/>
           <include name="setup"/>
         </methods>
       </class> <!-- Tests.SearchTest -->
