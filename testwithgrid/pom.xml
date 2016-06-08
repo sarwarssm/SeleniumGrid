@@ -7,8 +7,17 @@
 	<version>0.0.1-SNAPSHOT</version>
 
 
-	<name>testwithgrid</name>
-	<url>http://maven.apache.org</url>
+	<name> Webdriver Test With Grid</name>
+	<description>This is a Simple Data driven framework , built by using, Webdriver and TestNg</description>
+	
+	<developers>
+		<developer>
+			<name>Shah Murshed</name>
+			<email>murshed.shah@gmail.com</email>
+			<organization>sarwarssm</organization>
+			<organizationUrl>https://github.com/sarwarssm</organizationUrl>
+		</developer>
+	</developers>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
