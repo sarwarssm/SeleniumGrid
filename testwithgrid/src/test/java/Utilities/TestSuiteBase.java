@@ -32,39 +32,27 @@ public class TestSuiteBase {
 
 	public static WebDriver getDriverInstance(String platform, String browser, String version, String url)
 			throws MalformedURLException {
-		//Provide your hub ip or sauce lab credentials
-		String hubURL = "http://192.168.1.2:4444/wd/hub";
-		WebDriver driver = null;
-		DesiredCapabilities caps = new DesiredCapabilities();
 
-		// Platforms
-		if (platform.equalsIgnoreCase("Windows")) {
-			caps.setPlatform(Platform.WINDOWS);
-		}
-		if (platform.equalsIgnoreCase("MAC")) {
-			caps.setPlatform(Platform.MAC);
-		}
-		// Browsers
-		if (browser.equalsIgnoreCase("chrome")) {
-			caps = DesiredCapabilities.chrome();
-		}
-		if (browser.equalsIgnoreCase("firefox")) {
-			caps = DesiredCapabilities.firefox();
-		}
+//Provide your hub ip or sauce lab credentials
+		
+//		String hubURL ="http://ec2-54-145-153-64.compute-1.amazonaws.com:4444/wd/hub";
+		
+//		Shah's local machine
+//		String hubURL = "http://PF14H0VV.healthpn.com:4444/wd/hub";	
+		
+//		local selenium server
+		String hubURL = "http://hp-5m8r3p4.healthpn.com:4444/wd/hub";
+		
 
-		if (browser.equalsIgnoreCase("safari")) {
-			caps = DesiredCapabilities.safari();
-		}
-		// Version
-		caps.setVersion(version);
-		driver = new ScreenShotRemoteWebDriver(new URL(hubURL), caps);
+		WebDriver driver = new RemoteWebDriver(new URL(hubURL),  new ChromeOptions());
+	
 		// Maximize the browser's window
 		driver.manage().window().maximize();
-		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
 		// Open the Application
 		driver.get(url);
+		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		return driver;
 	}
 
