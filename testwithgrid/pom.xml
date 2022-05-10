@@ -25,22 +25,21 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>org.testng</groupId>
-			<artifactId>testng</artifactId>
-			<version>6.8</version>
-		</dependency>
+		   <groupId>org.testng</groupId>
+           <artifactId>testng</artifactId>
+            <version>7.0.0</version>
+	</dependency>
 
-
-		<dependency>
-			<groupId>org.seleniumhq.selenium</groupId>
-			<artifactId>selenium-java</artifactId>
-			<version>2.53.0</version>
-		</dependency>
+    <dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-java</artifactId>
+        <version>3.141.59</version>
+      </dependency>  
 
 		<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-csv</artifactId>
-			<version>1.2</version>
+			<version>1.7</version>
 		</dependency>
 
 		<dependency>
@@ -54,25 +53,49 @@
 			<artifactId>javaee-api</artifactId>
 			<version>7.0</version>
 		</dependency>
+		
+		
+		<dependency>
+    <groupId>commons-io</groupId>
+    <artifactId>commons-io</artifactId>
+    <version>2.5</version>
+     </dependency>
+		
 	</dependencies>
-	
 	
 	<build>
         <!-- Source directory configuration -->
         <sourceDirectory>src</sourceDirectory>
         <plugins>
             <!-- Following plugin executes the testng tests -->
+	<plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+        <configuration>
+            <source>1.8</source>
+            <target>1.8</target>
+        </configuration>
+    </plugin>	
+		
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.17</version>
+                <version>3.0.0-M5</version>
                 <configuration>
+                    <!-- Next 4 lines are for parellel execution -->
+            <!--         <forkCount>1</forkCount>
+                     <reuseForks>true</reuseForks>
+                     <parallel>tests</parallel>
+                     <threadCount>10</threadCount> -->
                     <!-- Suite testng xml file to consider for test execution -->
                     <suiteXmlFiles>
                         <suiteXmlFile>testng.xml</suiteXmlFile>
+                       <!--  <suiteXmlFile>LocalTest.xml</suiteXmlFile> -->
+                        
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
         </plugins>
     </build>
+	
 </project>
