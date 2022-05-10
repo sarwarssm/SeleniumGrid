@@ -10,9 +10,8 @@ import org.openqa.selenium.WebDriver;
 public class TakeScreenshot {
 	public String date = new java.util.Date().toString();
 	
-	
-	// use your desired path where do you want to save screenshots
-	public String path = "c:\\seleniuml_logs\\Screenshots\\";
+	// use your desired path where do you want to save screenshots in the jenkins server
+	public String path = "C:\\selenium_logs\\Screenshots\\";	
 															
 	WebDriver driver = null;
 
@@ -25,7 +24,7 @@ public class TakeScreenshot {
 			tmp = tmp.substring(0, tmp.indexOf(':'));
 			FileUtils.copyFile(screenshot, new File(path + tmp + " " + fileName + date + ".png"));
 			filePath = new File(path + tmp + " " + fileName + date + ".png").toString();
-
+			
 		} catch (IOException e) {
 			System.out.println("Unable to take screenshot #1 TakeScreenshot.java");
 			e.printStackTrace();
